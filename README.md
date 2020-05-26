@@ -1,5 +1,6 @@
 # ShuttlePy
-Macro for enrolling Shuttle bus for Yonsei University (Shinchon, International Campus). Read Readme plz.
+Macro for enrolling Shuttle bus for Yonsei University (Shinchon, International Campus). Read Readme plz. <br>
+연세대학교 신촌 <--> 국제(송도) 셔틀 신청 매크로. 
 
 #####
 Made for exercising Python, Crawling, Selenium.
