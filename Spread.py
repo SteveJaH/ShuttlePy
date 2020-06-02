@@ -1,24 +1,16 @@
-import pyautogui
 import time
 import datetime
-import webbrowser
-import os
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.alert import Alert
-import sys
-from bs4 import BeautifulSoup
-from selenium.common.exceptions import NoAlertPresentException, NoSuchElementException
+from selenium.common.exceptions import NoAlertPresentException
 
 now = datetime.datetime.now()
 dateformat = str(now.year) + str(now.month).zfill(2) +  str(now.day+2).zfill(2)
 
 f = open("Reserv.txt", 'r')
 lines = f.readlines()
-id = lines[3].rstrip("\n")
+user_id = lines[3].rstrip("\n")
 password = lines[5].rstrip("\n")
 numbers = int(lines[38])
 reslist = lines[45: 45+numbers]
@@ -48,10 +40,6 @@ def CondCheck(driver):
     date = Select(driver.find_element_by_css_selector('#selectedDate')).options
     datelist = []
 
-#    for elem in date:
-#        datelist.extend(elem.text)
-
-
     while (dateformat not in datelist)  and (count <= 20):
         date = Select(driver.find_element_by_css_selector('#selectedDate'))
         datelist = date.options
@@ -59,10 +47,10 @@ def CondCheck(driver):
         time.sleep(0.2)
         driver.refresh()
         count = count + 1
-    
+
     date = Select(driver.find_element_by_css_selector('#selectedDate'))
     datelist = date.options
-    
+
     if(dateformat in datelist):
         #3번째 날 선택
         print("1111111111")
@@ -71,7 +59,7 @@ def CondCheck(driver):
     else:
         print("Error : No date equal!\n")
         return 0
-    
+
 def reservation(driver, IS, Busnumber):
     
     driver.get("https://ysweb.yonsei.ac.kr/busTest/index2.jsp")
@@ -85,7 +73,7 @@ def reservation(driver, IS, Busnumber):
     date = Select(driver.find_element_by_css_selector('#selectedDate'))
     date.select_by_value(dateformat)
 
-    #첫번째 tr:nth-child(*) 가 시간에 해당하는 
+    #첫번째 tr:nth-child(*) 가 시간에 해당하는
     #변수 #pageid > div > div.table_box.tab_cont > table > tbody > tr:nth-child(8) > td:nth-child(5) > select
     select = Select(driver.find_element_by_css_selector('#pageid > div > div.table_box.tab_cont > table > tbody > tr:nth-child('+ str(Busnumber) + ') > td:nth-child(5) > select')) 
     #"강의" 선택
@@ -94,7 +82,7 @@ def reservation(driver, IS, Busnumber):
     print(remain)
 
 
-    #신청 버튼; 마찬가지로 첫번째 tr:nth-child(*) 가 변수 
+    #신청 버튼; 마찬가지로 첫번째 tr:nth-child(*) 가 변수
     # #pageid > div > div.table_box.tab_cont > table > tbody > tr:nth-child(8) > td:nth-child(6) > span
     enter = driver.find_element_by_css_selector('#pageid > div > div.table_box.tab_cont > table > tbody > tr:nth-child(' + str(Busnumber) + ') > td:nth-child(6)').click()
     try:
@@ -105,7 +93,7 @@ def reservation(driver, IS, Busnumber):
 options = webdriver.ChromeOptions()
 options.add_argument("--start-maximized")
 driver1 = webdriver.Chrome('chromedriver.exe', options=options)
-login(driver1, id, password)
+login(driver1, user_id, password)
 
 #if(CondCheck(driver1)==1):
 for i in range(0, numbers):
