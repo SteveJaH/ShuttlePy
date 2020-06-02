@@ -6,6 +6,9 @@
 **Macro for enrolling Shuttle bus for Yonsei University** (Shinchon, International Campus). Read Readme plz.
 
 ## How to Use (사용법)
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d36006a6a85a40d3a0b7c9a79d2a85c0)](https://app.codacy.com/manual/jay0118/ShuttlePy?utm_source=github.com&utm_medium=referral&utm_content=SteveJayH/ShuttlePy&utm_campaign=Badge_Grade_Dashboard)
+
 #### 1. Reserv.txt 파일을 여세요. Open Reserv.txt
 연세포탈 ID, PW를 입력하세요. 코드를 보시면 알겠지만 '개발자'에게 사용자의 개인정보를 전송하는 등의 '불법적'인 일은 수행되지 않습니다. 코드를 볼 줄 안다면 코드를 읽어보시고 모르신다면 파이썬 수업을 들은 친구들한테 물어보세요.\
 Put your ID, password of Yonsei portal(https://www.portal.yonsei.ac.kr). There is no 'special illegal thing' for acquiring your ID and password, such that sending your ID and PW to 'me'. Don't worry about that.
