@@ -9,21 +9,21 @@
 
 ## How to Use (사용법)
 
-#### 1. Reserv.txt 파일을 여세요. Open Reserv.txt
-연세포탈 ID, PW를 입력하세요. 코드를 보시면 알겠지만 '개발자'에게 사용자의 개인정보를 전송하는 등의 '불법적'인 일은 수행되지 않습니다. 코드를 볼 줄 안다면 코드를 읽어보시고 모르신다면 파이썬 수업을 들은 친구들한테 물어보세요.\
-Put your ID, password of Yonsei portal(https://www.portal.yonsei.ac.kr). There is no 'special illegal thing' for acquiring your ID and password, such that sending your ID and PW to 'me'. Don't worry about that.
+### 1-Reserv.txt 파일을 여세요. Open Reserv.txt
+[연세포탈](https://www.portal.yonsei.ac.kr) ID, PW를 입력하세요. 코드를 보시면 알겠지만 '개발자'에게 사용자의 개인정보를 전송하는 등의 '불법적'인 일은 수행되지 않습니다. 코드를 볼 줄 안다면 코드를 읽어보시고 모르신다면 파이썬 수업을 들은 친구들한테 물어보세요.\
+Put your ID, password of [Yonsei portal](https://www.portal.yonsei.ac.kr). There is no 'special illegal thing' for acquiring your ID and password, such that sending your ID and PW to 'me'. Don't worry about that.
 
-#### 2. 질문들을 잘 읽고 채워넣으세요. Read Shuttle information and fill it.
-##### 1) 일주일에 몇 번의 셔틀 버스를 타는지(원하는지). How many shuttle do you want in one week.
-##### 2) 각각의 셔틀에 대해서 '요일', '방향', '시간' 3개를 입력해야 해요. You have to select 3 numbers for each shuttle, 'Day of the week', 'Direction' and 'Time'.
+### 2-질문들을 잘 읽고 채워넣으세요. Read Shuttle information and fill it.
+#### 1) 일주일에 몇 번의 셔틀 버스를 타는지(원하는지). How many shuttle do you want in one week.
+#### 2) 각각의 셔틀에 대해서 '요일', '방향', '시간' 3개를 입력해야 해요. You have to select 3 numbers for each shuttle, 'Day of the week', 'Direction' and 'Time'.
 
-  -  아래 표 참고해서 요일을 숫자로 바꿔서. Day of the week as number \
+-    아래 표 참고해서 요일을 숫자로 바꿔서. Day of the week as number \
 Mon --- Sun \
 0 1 --- 5 6
 
-  -  방향을 숫자로. Direction (Shinchon to International, International to Shinchon)
+-    방향을 숫자로. Direction (Shinchon to International, International to Shinchon)
 
-  -  시간표(Reserv.txt에 있어요)을 숫자로. Time table
+-    시간표(Reserv.txt에 있어요)을 숫자로. Time table
 
 ## Example
 There is an example for Reserv.txt. You may copy and rename it to get help. Actual name of text which will used in python code must be "Reserv.txt".
