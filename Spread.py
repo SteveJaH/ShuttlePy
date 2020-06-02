@@ -81,13 +81,13 @@ def reservation(driver, IS, Busnumber):
     remain = driver.find_element_by_xpath('//*[@id="pageid"]/div/div[2]/table/tbody/tr[6]')
     print(remain)
 
-
     #신청 버튼; 마찬가지로 첫번째 tr:nth-child(*) 가 변수
     # #pageid > div > div.table_box.tab_cont > table > tbody > tr:nth-child(8) > td:nth-child(6) > span
-    enter = driver.find_element_by_css_selector('#pageid > div > div.table_box.tab_cont > table > tbody > tr:nth-child(' + str(Busnumber) + ') > td:nth-child(6)').click()
+    enter = driver.find_element_by_css_selector('#pageid > div > div.table_box.tab_cont > table > tbody > tr:nth-child(' + str(Busnumber) + ') > td:nth-child(6)')
+    enter.click()
     try:
         Alert(driver).accept()
-    except NoAlertPresentException as e:
+    except NoAlertPresentException as _:
         print("FULL")
 
 options = webdriver.ChromeOptions()
@@ -106,14 +106,11 @@ for i in range(0, numbers):
 
 driver1.get("https://ysweb.yonsei.ac.kr/busTest/reserveinfo2.jsp")
 
-
 #pageid > div > div.table_box.tab_cont > table > tbody > tr:nth-child(2) > td:nth-child(6) > a
 #//*[@id="pageid"]/div/div[2]/table/tbody/tr[2]/td[6]/a
 #pageid > div > div.table_box.tab_cont > table > tbody > tr:nth-child(3) > td:nth-child(6) > span
 #//*[@id="pageid"]/div/div[2]/table/tbody/tr[3]/td[6]/span
 
-
 # IS, Busnumber
 # 5 토요일 1 8 , 0 17
 # 0 월요일 1 7 , 0 18
-    
