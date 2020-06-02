@@ -34,7 +34,7 @@ def login(driver, Id, Password):
 
 def CondCheck(driver):
     driver.get("https://ysweb.yonsei.ac.kr/busTest/index2.jsp")
-    count = 0 
+    count = 0
 
     #요일 선택
     date = Select(driver.find_element_by_css_selector('#selectedDate')).options
@@ -61,7 +61,7 @@ def CondCheck(driver):
         return 0
 
 def reservation(driver, IS, Busnumber):
-    
+
     driver.get("https://ysweb.yonsei.ac.kr/busTest/index2.jsp")
 
     #신촌 송도 송도 신촌
@@ -75,7 +75,7 @@ def reservation(driver, IS, Busnumber):
 
     #첫번째 tr:nth-child(*) 가 시간에 해당하는
     #변수 #pageid > div > div.table_box.tab_cont > table > tbody > tr:nth-child(8) > td:nth-child(5) > select
-    select = Select(driver.find_element_by_css_selector('#pageid > div > div.table_box.tab_cont > table > tbody > tr:nth-child('+ str(Busnumber) + ') > td:nth-child(5) > select')) 
+    select = Select(driver.find_element_by_css_selector('#pageid > div > div.table_box.tab_cont > table > tbody > tr:nth-child('+ str(Busnumber) + ') > td:nth-child(5) > select'))
     #"강의" 선택
     select.select_by_value('1')
     remain = driver.find_element_by_xpath('//*[@id="pageid"]/div/div[2]/table/tbody/tr[6]')
