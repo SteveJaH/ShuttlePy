@@ -1,5 +1,7 @@
 <div align="center"><img src="https://github.com/SteveJayH/ShuttlePy/blob/master/image/shuttlepy.png" height="150px"/></div>
 
+<h2 align="center">ShuttlePy: Shuttle enroll macro for Yonsei Univ.</h2>
+
 Macro for enrolling Shuttle bus for Yonsei University (Shinchon, International Campus). Read Readme plz. <br>
 연세대학교 신촌 <--> 국제(송도) 셔틀 신청 매크로. 
 
