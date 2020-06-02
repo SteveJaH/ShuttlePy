@@ -17,13 +17,13 @@ Put your ID, password of [Yonsei portal](https://www.portal.yonsei.ac.kr). There
 #### 1) 일주일에 몇 번의 셔틀 버스를 타는지(원하는지) How many shuttle do you want in one week
 #### 2) 각각의 셔틀에 대해서 '요일', '방향', '시간' 3개를 입력해야 해요 You have to select 3 numbers for each shuttle, 'Day of the week', 'Direction' and 'Time'
 
- 1. 아래 표 참고해서 요일을 숫자로 바꿔서. Day of the week as number \
+##### 아래 표 참고해서 요일을 숫자로 바꿔서 Day of the week as number
 Mon --- Sun \
 0 1 --- 5 6
 
- 2. 방향을 숫자로. Direction (Shinchon to International, International to Shinchon)
+##### 방향을 숫자로 Direction (Shinchon to International, International to Shinchon)
 
- 3. 시간표(Reserv.txt에 있어요)을 숫자로. Time table
+##### 시간표(Reserv_txt에 있어요)을 숫자로 Time table
 
 ## Example
 There is an example for Reserv.txt. You may copy and rename it to get help. Actual name of text which will used in python code must be "Reserv.txt".
