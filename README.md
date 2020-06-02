@@ -2,12 +2,12 @@
 
 <h2 align="center">ShuttlePy: Shuttle enroll macro for Yonsei Univ.</h2>
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d36006a6a85a40d3a0b7c9a79d2a85c0)](https://app.codacy.com/manual/jay0118/ShuttlePy?utm_source=github.com&utm_medium=referral&utm_content=SteveJayH/ShuttlePy&utm_campaign=Badge_Grade_Dashboard)
+
 **연세대학교 신촌 캠퍼스와 국제(송도) 캠퍼스 간 왕복 셔틀버스 신청 매크로.** 2020년 졸업하여 업데이트는 어려울 것 같습니다. :cry: 프로그램이 "신청이벤트"를 바로 전달하는 것이 아니라 버튼을 찾고 "클릭이벤트"를 전달하기 때문에 느립니다. 경쟁률 높은 건 못 잡을 수 있어요. \
 **Macro for enrolling Shuttle bus for Yonsei University** (Shinchon, International Campus). Read Readme plz.
 
 ## How to Use (사용법)
-
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d36006a6a85a40d3a0b7c9a79d2a85c0)](https://app.codacy.com/manual/jay0118/ShuttlePy?utm_source=github.com&utm_medium=referral&utm_content=SteveJayH/ShuttlePy&utm_campaign=Badge_Grade_Dashboard)
 
 #### 1. Reserv.txt 파일을 여세요. Open Reserv.txt
 연세포탈 ID, PW를 입력하세요. 코드를 보시면 알겠지만 '개발자'에게 사용자의 개인정보를 전송하는 등의 '불법적'인 일은 수행되지 않습니다. 코드를 볼 줄 안다면 코드를 읽어보시고 모르신다면 파이썬 수업을 들은 친구들한테 물어보세요.\
