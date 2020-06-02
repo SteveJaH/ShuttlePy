@@ -87,7 +87,7 @@ def reservation(driver, IS, Busnumber):
     enter.click()
     try:
         Alert(driver).accept()
-    except NoAlertPresentException as _:
+    except NoAlertPresentException:
         print("FULL")
 
 options = webdriver.ChromeOptions()
