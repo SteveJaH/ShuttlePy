@@ -2,12 +2,8 @@
 
 <h2 align="center">ShuttlePy: Shuttle enroll macro for Yonsei Univ.</h2>
 
-Macro for enrolling Shuttle bus for Yonsei University (Shinchon, International Campus). Read Readme plz. <br>
+Macro for enrolling Shuttle bus for Yonsei University (Shinchon, International Campus). Read Readme plz.
 연세대학교 신촌 <--> 국제(송도) 셔틀 신청 매크로. 
-
-#####
-Made for exercising Python, Crawling, Selenium.
-#####
 
 1. Open Reserv.txt
   Put your ID, password of Yonsei portal(https://www.portal.yonsei.ac.kr).
