@@ -1,4 +1,4 @@
-<div align="center"><img src="https://github.com/SteveJayH/ShuttlePy/blob/master/image/shuttlepy.png" height="50%"/></div>
+<div align="center"><img src="https://github.com/SteveJayH/ShuttlePy/blob/master/image/shuttlepy.png" height="150px"/></div>
 
 <h2 align="center">ShuttlePy: Shuttle enroll macro for Yonsei Univ.</h2>
 
