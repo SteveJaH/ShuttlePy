@@ -2,7 +2,7 @@
 
 <h2 align="center">ShuttlePy: Shuttle enroll macro for Yonsei Univ.</h2>
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d36006a6a85a40d3a0b7c9a79d2a85c0)](https://app.codacy.com/manual/jay0118/ShuttlePy?utm_source=github.com&utm_medium=referral&utm_content=SteveJayH/ShuttlePy&utm_campaign=Badge_Grade_Dashboard)
+<p align="center"> <a href="https://www.codacy.com/gh/SteveJayH/ShuttlePy/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=SteveJayH/ShuttlePy&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/2afcd0c32b0a49c49e96e1d0db33057c"/></a> </p>
 
 **연세대학교 신촌 캠퍼스와 국제(송도) 캠퍼스 간 왕복 셔틀버스 신청 매크로.** 2020년 졸업하여 업데이트는 어려울 것 같습니다. :cry: 프로그램이 "신청이벤트"를 바로 전달하는 것이 아니라 버튼을 찾고 "클릭이벤트"를 전달하기 때문에 느립니다. 경쟁률 높은 건 못 잡을 수 있어요. \
 **Macro for enrolling Shuttle bus for Yonsei University** (Shinchon, International Campus). Read Readme plz.
